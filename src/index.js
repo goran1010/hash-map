@@ -33,11 +33,22 @@ console.log(test.values());
 console.log(test.entries());
 
 test.set("tornado", "dark-gray");
+console.log(test.buckets);
+
 test.set("moon", "silver");
 test.set("sun", "yellow");
-test.set("pluto", "dark");
+test.set("sunset", "silver");
+test.set("moon moon", "yellow");
+test.set("more text", "dark-gray");
+test.set("another text here", "silver");
+test.set("some text here", "yellow");
 
 console.log(test.buckets);
+console.log(test.keys());
+
+console.log(test.length());
+test.remove("sun");
+
 console.log(test.length());
 
 test.clear();

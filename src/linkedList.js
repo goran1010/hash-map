@@ -102,7 +102,7 @@ export default class List {
       i++;
     }
 
-    if (currentNode === null && i !== index) return; // If index is out of bounds, exit
+    if (currentNode === null && i !== index) return;
 
     prevNode.next = new Node(value, currentNode);
   }
